@@ -5,6 +5,7 @@ using namespace std;
 
 
 int partition(vector<int>& arr, int start, int end) {
+    
     int pivot = arr[start];
     int i = start;
     for (int j = start + 1; j <= end ;j++){
@@ -30,7 +31,7 @@ void quicksort(vector<int>& arr, int start, int end) {
 
 int main() {
     vector<int> arr = {1,3,8,2,5,4,9,6};
-    quicksort(arr ,0,arr.size());
+    quicksort(arr ,0,arr.size() - 1);
     for (int x = 0; x < arr.size(); x++) {
         cout << " "<< arr[x];
     }
