@@ -38,7 +38,7 @@ class QuicksortVariants():
 
     @staticmethod
     def partition_class_random(array, start, end):
-        pivot = random.randint(start, end)
+        pivot = array[random.randint(start, end)]
         i = start
         for j in range(start + 1, end + 1):
             if array[j] <= pivot:
